@@ -1,3 +1,3 @@
-# social_media_app
-A basic social media app
-Readme updated
+# Social Media App
+
+A Basic social media app
