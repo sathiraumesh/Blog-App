@@ -2,6 +2,8 @@
     require_once 'meta_data.php';
     require_once 'functions.php';
 
+    header('location:index.php');
+
     $connection = new mysqli($hostname,$username,$password,$database);
 
     if($connection->connect_error)
