@@ -2,7 +2,7 @@
     require_once 'meta_data.php';
     require_once 'functions.php';
 
-    header('location:index.php');
+    header('location:setprofile.html');
 
     $connection = new mysqli($hostname,$username,$password,$database);
 
@@ -20,6 +20,11 @@
         $username=$_POST['username'];
         $password=$_POST['password'];
         $email =$_POST['email'];
+        // satrting session
+        session_start();
+        $_SESSION['username']=$username;
+        $_SESSION['password']=$password;
+        $_SESSION['email']=$email;
         
         // sanitaizing the variables
         $username=sanitizeMysql($connection,"$username");

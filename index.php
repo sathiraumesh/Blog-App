@@ -1,5 +1,4 @@
-<?php
-echo<<<_END
+
 <html>
 <head>
     <title>
@@ -35,6 +34,7 @@ echo<<<_END
                                         <input type="text" name="email" id="email" class="col-md-12 form-control">
                                         <br>
                                         <button type="submit" class="btn btn-primary">Sign Up</button>
+                                        <input type="hidden" name="signup" value="yes">
                                     </form>
                                 </div>
                     </div>
@@ -60,6 +60,4 @@ echo<<<_END
 
 </body>
 </html>
-_END
 
-?>
