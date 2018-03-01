@@ -1,3 +1,3 @@
-# Social Media App
+# A Blog App
 
-A Basic social media app
+A basic blog app
