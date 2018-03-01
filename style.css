@@ -1,0 +1,92 @@
+.custom-style{
+
+    background-color:black;
+    border-color:black;
+    
+    
+}
+
+body{
+
+    background-color: #111111;
+}
+
+a{
+
+    color: white!important;
+}
+
+.login{
+
+    margin-top: 8px;
+    margin-right: 2px;
+}
+.signup{
+    margin-top: 8px;
+}
+
+.image-container{
+        padding-top: 1px;
+        margin-top: 50px;
+        background-image:url(./assets/home_page_pic.jpg);
+		background-size:100% 100%;
+		background-repeat: no-repeat;
+		height:600px;
+}
+
+.welcome-caption{
+    margin-top: 100px;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.footer{
+    margin-top:30px;
+ padding-top:20px; 
+ padding-bottom:20px;
+ font-family:"Raleway";
+ background-color: black;
+}
+
+.horizontal-line{
+ border-top: 1px solid #8c8b8b;
+}
+
+.line-two{
+ width:40%;
+ opacity: 0.8;
+}
+
+.line-one{
+ width:80%;
+}
+
+.line-container{
+ padding-left: 20%;
+ padding-right: 20%;
+}
+
+.line-container p{
+ text-align: center;
+ color: white;
+}
+
+.signup-form-card{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    background-color:#ffb100;
+}
+
+
+
+
+

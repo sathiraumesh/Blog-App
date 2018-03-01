@@ -1,42 +1,38 @@
-<?php
+<html>
+    <head>
+        <title>Alpha Blog</title>
+        <?php 
+          require_once 'header_metadata.php';
+        ?>
+    </head>
 
-require_once 'meta_data.php';
+    <body>
+        
+        
+        <?php
+          require_once 'header.php';
+        ?>
 
 
-$connection = new mysqli($hostname,$username,$passwrod,$database);
-
-if(!$connection)
-{
-
-    echo "connection  to the data base failed <br>";
-    die($connection->connect_error);
-}
-
-
-
-if( isset($_POST['username']) && isset($_POST['password']))
-{
-   
-    
-    echo "The user name is ".$user_name."<br>";
-    echo "The password is".$user_password."<br>";
-    echo "The emai is ".$user_email."<br>";
-}
-
-   
-
-echo<<<_END
-
-<form action="index.php" method="post">
-username <input type="text" name="username"><br>
-password<input type="password" name="password"><br>
-email <input type="text" name="email"><br>
-<input type="submit" value="submit">
-</form>
-<a href="testsession.php"> test</a>
+        
+          <div class="container-fluid">
+              <div class="row">
+            <div class="image-container">
+               <h1 class="welcome-caption">WELCOME</h1>
+            </div>
+          </div>
+        </div>
 
 
 
-_END
 
-?>
+      <?php
+        require_once 'footer.php';
+        require_once 'script_link.php'
+      ?>
+       
+      
+
+
+    </body>
+</html>
