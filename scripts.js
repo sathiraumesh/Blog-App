@@ -2,7 +2,12 @@
 document.getElementById('signup').onclick=function(){
 
     // alert("signup clicked");
-    location.href="./signup.php"
+    location.href="./signup.php";
+}
+
+document.getElementById('login').onclick=function(){
+
+    location.href="./login.php"
 }
 
 
