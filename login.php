@@ -20,16 +20,15 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
     if ($rows > 0) {
         header('Location: user_home.php');
         session_start();
-        
 
         for ($i = 0; $i < $rows; $i++) {
 
             $row = $result->fetch_array(MYSQLI_ASSOC);
             $result->data_seek($i);
 
-            $_SESSION['id']= $row['id'];
-            $_SESSION['username']=$row['username'];
-            
+            $_SESSION['id'] = $row['id'];
+            $_SESSION['username'] = $row['username'];
+
         }
 
     } else {
@@ -39,6 +38,9 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
     }
 
     // if (!$result)die($conn->error);
+
+   
+    $conn->close();
 }
 
 ?>

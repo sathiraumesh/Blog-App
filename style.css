@@ -13,7 +13,7 @@ body{
 
 a{
 
-    color: white!important;
+    /* color: white!important; */
 }
 
 .login{
@@ -89,6 +89,11 @@ a{
 .error{
 
     color: red;
+}
+
+.dropdown-menu{
+
+    background-color: #111111;
 }
 
 
