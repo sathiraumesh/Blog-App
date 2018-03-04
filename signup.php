@@ -1,4 +1,6 @@
 <?php
+
+    
     require_once 'login_meta_data.php';
 
     $conn = new mysqli($hostname,$username,$password,$database);
@@ -10,6 +12,7 @@
         $email=$_POST['email'];
         $user_password=$_POST['password'];
         $username=$_POST['username'];
+        header('Location:login.php');
         // echo "The email of the user is".$email;
         // echo "The passsword of the user is".$user_password;
 

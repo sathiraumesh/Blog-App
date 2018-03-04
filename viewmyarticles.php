@@ -114,7 +114,7 @@ require_once 'header.php';
       <hr>
 
       <div class="col-xs-3 col-sm-2 col-md-1">
-            <form action="viewarticles.php" method="post">
+            <form action="viewmyarticles.php" method="post">
 
             <input type="hidden" name="delete" value="yes">
             <input type="hidden" name="articleid" value="$articleid">
