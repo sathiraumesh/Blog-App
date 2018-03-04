@@ -2,7 +2,12 @@
     session_start();
     $username=$_SESSION['username'];
     $id=$_SESSION['id'];
-    
+
+    if($id==0){
+            echo "".$id;
+        header('Location:login.php');
+    }
+   
 ?>
 
 <html>
@@ -11,6 +16,7 @@
     <title>home</title>
         <?php 
           require_once 'header_metadata.php';
+          $login=true;
         ?>
     
     </head>
@@ -20,7 +26,7 @@
         <?php require_once 'header.php';
         ?>
     
-        <a href="">hellow</a>
+      
      
 
 

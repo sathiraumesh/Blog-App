@@ -20,6 +20,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
     if ($rows > 0) {
         header('Location: user_home.php');
         session_start();
+      
 
         for ($i = 0; $i < $rows; $i++) {
 

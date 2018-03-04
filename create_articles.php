@@ -1,5 +1,12 @@
+<?php
+session_start();
+$userid=$_SESSION['id'];          
+if($userid==0){
 
-
+    header('Location:login.php');
+}   
+         
+?>
 
 <?php
 
@@ -11,7 +18,7 @@ if (!$conn) {
     die($conn->connect_error);
 }
 
-    session_start();
+    
     $username=$_SESSION['username'];
     $userid=$_SESSION['id'];
 
@@ -36,8 +43,10 @@ if (!$conn) {
 
 <html>
     <head>
-    <?php require_once 'header_metadata.php'?>
-
+    <?php require_once 'header_metadata.php';
+     $login=true;
+    ?>
+   
 
     </head>
 

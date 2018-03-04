@@ -39,7 +39,9 @@ a{
     color: white;
     text-align: center;
 }
-
+.signout{
+    margin-top: 8px;
+}
 
 
 
@@ -95,6 +97,7 @@ a{
 
     background-color: #111111;
 }
+
 
 
 

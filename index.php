@@ -3,6 +3,7 @@
         <title>Alpha Blog</title>
         <?php 
           require_once 'header_metadata.php';
+          $login=false;
         ?>
     </head>
 
