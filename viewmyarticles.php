@@ -38,6 +38,7 @@ if (isset($userid)) {
     $query = "SELECT `title`,`description`,`article_id` FROM `articles` WHERE `id`='$userid' ";
     $result = $conn->query($query);
     $rows = $result->num_rows;   
+    $viewarticles=true;
 }
 
 else{
@@ -105,7 +106,7 @@ require_once 'header.php';
 
    echo<<<_END
   
-   <div class=" col-xs-12 col-sm-12 col-md-12 ">
+   <div class=" col-xs-12 col-sm-12 col-md-12 blog-cards ">
    <div class=" col-xs-12 col-sm-12 col-md-12 well">
       <h1 class="blog-headers" style="text-align:center;">$title</h1>
       <hr>

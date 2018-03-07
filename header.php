@@ -40,14 +40,26 @@ _END;
               ?>
                 
               </ul>
-              <form class="navbar-form navbar-left" role="search">
+              <?php 
+              if($viewarticles){
+
+                echo<<<_END
+
+                <form class="navbar-form navbar-left" role="search">
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Search">
+                  <input type="text" class="form-control" placeholder="Search" id="search">
                 </div>
                 <button type="submit" class="btn btn-danger">Submit</button>
               </form>
               
               <ul class="nav navbar-nav navbar-right">
+              
+_END;
+
+              }
+   
+              ?>
+              
                   <?php 
                     if($login==false){
                         echo<<<_END
