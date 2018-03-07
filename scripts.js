@@ -1,28 +1,33 @@
 
-document.getElementById('signup').onclick=function(){
+if(document.getElementById('signup')){
 
-    // alert("signup clicked");
-    location.href="./signup.php";
+    document.getElementById('signup').onclick=function(){
+
+        // alert("signup clicked");
+        location.href="./signup.php";
+    }
+    
 }
 
-document.getElementById('login').onclick=function(){
+if(document.getElementById('login')){
 
-    location.href="./login.php"
+    document.getElementById('login').onclick=function(){
+
+        location.href="./login.php"
+    }
 }
 
 
-function checkPassword(){
-    alert("submit is clicked");
-   var passwordOne= document.getElementById('password').value;
-   var passwordTwo= document.getElementById('confirmpassword').value;
 
-   if(passwordOne==passwordTwo){
- 
-       return true;
-   }
-   else{
-      
-       return false;
-   }
+var blogHeaders=document.getElementsByClassName('blog-headers');
+// alert(blogHeaders);
+
+console.log(blogHeaders);
+
+for(var i=0;i<blogHeaders.length;i++){
+
+    console.log(blogHeaders[i].innerHTML);
+
 }
+
 

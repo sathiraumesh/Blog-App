@@ -1,6 +1,8 @@
 <?php
 require_once 'login_meta_data.php';
 
+$validator=false;
+
 $conn = new mysqli($hostname, $username, $password, $database);
 
 if (!$conn) {
@@ -16,14 +18,15 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
     $query = "SELECT `id`,`username`, `password`, `email` FROM `user_credentials` WHERE `password`='$user_password' && `email`='$email' ";
     $result = $conn->query($query);
     $rows = $result->num_rows;
-
+    
     if ($rows > 0) {
         header('Location: user_home.php');
         session_start();
+        $validator=false;
       
 
         for ($i = 0; $i < $rows; $i++) {
-
+            
             $row = $result->fetch_array(MYSQLI_ASSOC);
             $result->data_seek($i);
 
@@ -33,8 +36,10 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
         }
 
     } else {
-
-        header('Location: login.php');
+      
+        $validator=true;
+        // header('Location: login.php');
+       
 
     }
 
@@ -85,7 +90,7 @@ require_once 'header.php';
 
 
                                 <?php
-if ($rows == 0) {
+if ($validator) {
     echo "<div class='error'>The user name or the password is inavlid</div>";
 
 }

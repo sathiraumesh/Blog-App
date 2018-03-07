@@ -107,7 +107,7 @@ require_once 'header.php';
   
    <div class=" col-xs-12 col-sm-12 col-md-12 ">
    <div class=" col-xs-12 col-sm-12 col-md-12 well">
-      <h1 style="text-align:center;">$title</h1>
+      <h1 class="blog-headers" style="text-align:center;">$title</h1>
       <hr>
 
       <h5 style="text-align:center;">$description</h5>
