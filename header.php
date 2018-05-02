@@ -52,7 +52,7 @@ _END;
                 <button type="submit" class="btn btn-danger">Submit</button>
               </form>
               
-              <ul class="nav navbar-nav navbar-right">
+             
               
 _END;
 
@@ -61,17 +61,22 @@ _END;
               ?>
               
                   <?php 
+
                     if($login==false){
                         echo<<<_END
+                        <ul class="nav navbar-nav navbar-right">
 
                 <li> <button id="login" class="btn btn-success login">&nbsp;&nbsp;Login&nbsp;&nbsp;</button></li>
-                <li> <button id="signup"  class="btn btn-primary signup">Sign Up</button></li>
+                <li> <button id="signup"  class="btn btn-primary signup">Sign Up</button> </li>
+               
 
 _END;
 
                     }else{
+
 echo<<<_END
-                    <form action="signout.php" method="post">
+                  <ul class="nav navbar-nav navbar-right"> 
+                  <form action="signout.php" method="post">
                   <li> <button type="submit" id="signout"  class="btn btn-primary signout">Log Out</button></li>
                   <input type="hidden" value="logout" name="logout">
                     </form>
