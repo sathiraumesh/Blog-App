@@ -98,7 +98,17 @@ a{
     background-color: #111111;
 }
 
-
+.new-posts{
+    
+    text-align: center;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+.home-head{
+    text-align: center;
+}
 
 
 
