@@ -126,7 +126,7 @@ require_once 'header.php';
 
 
       <div class="col-xs-2 col-sm-2 col-md-2">
-            <form action="viewarticles.php" method="post">
+            <form action="update_article.php" method="post">
 
             <input type="hidden" name="update" value="yes">
             <input type="hidden" name="articleid" value="$articleid">
