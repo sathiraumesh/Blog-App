@@ -50,7 +50,7 @@
                         
                 </div>
 
-                <div class="col-12 col-sm-8 col-md-4 col-lg-4">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 signup-form-card">
                             <form action="signup.php" method="post">
                                 <div class="form-group">

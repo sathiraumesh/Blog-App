@@ -106,7 +106,7 @@ if ($validator) {
 
         <?php
     
-echo "<div> hi";
+echo "<div>";
 require_once 'footer.php';
 echo "</div>";
 require_once 'script_link.php'

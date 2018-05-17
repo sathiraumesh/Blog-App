@@ -51,7 +51,7 @@ a{
 
 
 .footer{
-    margin-top:30px;
+ margin-top:30px;
  padding-top:20px; 
  padding-bottom:20px;
  font-family:"Raleway";
@@ -108,6 +108,12 @@ a{
 }
 .home-head{
     text-align: center;
+}
+
+.custom-footer-style{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
 }
 
 
